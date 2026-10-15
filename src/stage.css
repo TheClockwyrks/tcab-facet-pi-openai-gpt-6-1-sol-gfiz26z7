@@ -1,0 +1,7 @@
+/* Keep the seeded page's viewport-sized layout authoritative. The engine may
+   pin an attribute-sized canvas with inline pixel styles at DPR 1; these rules
+   preserve responsive CSS sizing while it still owns the backing store and fit. */
+#stage {
+  width: 100vw !important;
+  height: 100vh !important;
+}
